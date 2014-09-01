@@ -30,7 +30,7 @@ function sum (arrSum) {
 function paramify (hash) {
 	var output = [];
 	for (var key in hash) {
-		if(this[key] != hash[key]) {
+		if(hash.hasOwnProperty(key)) {
 			output.push(key + "=" + hash[key]);
 		}
 	}
