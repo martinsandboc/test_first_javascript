@@ -8,9 +8,9 @@ function makeAdder(adder) {
 }
 
 function forEach (array, action) {
-    for (i=0; i<array.length; i++) {
-      action(array[i]); 
-    }
+  for (i=0; i<array.length; i++) {
+    action(array[i]); 
+  }
 }
 
 function map (array, action) {
@@ -34,9 +34,9 @@ function filter (array, action) {
 function contains (collection, parameter) {
   if (Array.isArray(collection)) {
     for (i=0; i<collection.length; i++) {
-        if (collection[i] == parameter) {
-          return true; 
-        }
+      if (collection[i] == parameter) {
+        return true; 
+      }
     }
   } else {
     for (var key in collection) {
@@ -49,23 +49,23 @@ function contains (collection, parameter) {
 }
 
 function reduce (array, start, action) {
-    var result = 0;
-    for ( i=start; i < array.length; i ++) {
-        result = action(result, array[i]);
-    }
-    return result;
+  var result = 0;
+  for ( i=start; i < array.length; i ++) {
+    result = action(result, array[i]);
+  }
+  return result;
 }
 
 function countWordsInReduce (num, string){
-    var array = string.split(" ");
-    num += array.length;
-    return num;
+  var array = string.split(" ");
+  num += array.length;
+  return num;
 }
 
 function sum (array) {
   var add = function(a, b) {
-      return a+b;
-    };
+    return a+b;
+  };
   return (reduce(array, 0, add));
 }
 
