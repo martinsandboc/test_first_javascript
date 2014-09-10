@@ -11,10 +11,10 @@ function join (arr, delim) {
 	var output = "";
 	var arrLength = arr.length;
 	for (i=0; i < arrLength; i++) {
-			output += arr[i];
-			if ((delim != undefined) && (i != (arrLength -1))) {
-				output += delim;
-			}
+		output += arr[i];
+		if ((delim != undefined) && (i != (arrLength -1))) {
+			output += delim;
+		}
 	}
 	return output;
 }
