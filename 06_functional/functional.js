@@ -1,6 +1,6 @@
 function countWords (string) {
-	words = string.split(" ");
-	return words.length;
+  words = string.split(" ");
+  return words.length;
 }
 
 function makeAdder(adder) {
